@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>My 78 Project </title>
+</head>
+<body>
+<h1>My Family Book</h1>
+<img src=https://www.google.co.in/imgres?imgurl=https%3A%2F%2Fcdn5.vectorstock.com%2Fi%2F1000x1000%2F73%2F89%2Fcute-cartoon-family-characters-in-casual-vector-10237389.jpg&imgrefurl=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vector%2Fcute-cartoon-family-characters-in-casual-vector-10237389&tbnid=sY3BOGnTA6UbwM&vet=12ahUKEwj-y-LBsOTwAhUatUsFHfmBCO0QMygAegUIARDfAQ..i&docid=cTJAoROOfONf_M&w=1000&h=1080&q=cartoon%20family&hl=en&ved=2ahUKEwj-y-LBsOTwAhUatUsFHfmBCO0QMygAegUIARDfAQ
+style="width: 30%" id=family_image>
+<h4 id=family_member_name></h4>
+<button onclick="update();">Next</button>
+<script>
+    var images=
+["https://1-postimg.cc/MKdhy@6Z/family.jpg", "https://i.postimg.cc/L6HcYQMe/
+grand-father.png", “https://1.postimg.cc/wjMnFtMxX/father.jpg" ,
+"https: //i.postimg.cc/5ymDKL83/bro.jpg",
+"https://i.postimg.cc/JnL6wtrd/sister. jpg",
+"https: //i.postimg.cc/bw5W5zSK/mother. jpg"];
+var names = ["Family Book","Vamika Ganeriwala", "Dhiraj Ganeriwala", "Nidhi Ganeriwala",
+"Anupam Ganeriwala", "Alka Ganeriwala"];
+var i = 0;
+function up()
+{
+i++;
+var number_of_family_members_in_array= 5
+if(i > number_of_family_members_in_array)
+{
+i=0
+}
+var updatedImage = images[i];
+var updatedName = names[1];
+document.getElementById("family_member_image"). src = updatedImage;
+document.getElementById("family_member_name"). src = updatedName;
+}
+</script>
+</body>
+</html>
